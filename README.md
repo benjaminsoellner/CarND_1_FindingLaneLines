@@ -1,5 +1,5 @@
-#Self Driving Car Engineer Project 1 - Finding Lane Lines on the Road
-##Benjamin Söllner, 27 Mar 2017
+# Self Driving Car Engineer Project 1 - Finding Lane Lines on the Road
+## Benjamin Söllner, 27 Mar 2017
 
 ---
 
