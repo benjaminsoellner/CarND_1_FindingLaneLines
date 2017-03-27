@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+#### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consists of the following steps:
 * ``grayscale(...)``: Grayscaling the image in order to find gradients better
@@ -36,7 +36,7 @@ My pipeline consists of the following steps:
 
 The changes to ``draw_lines(...)`` are described above in step (2.). While previously a simple iteration was performed through all the line segments returned by the Hough Transformation (with drawing each of them), now, a more sophisticated algorithm is used that just returns 2 line segments finally.
 
-###2. Identify potential shortcomings with your current pipeline
+#### 2. Identify potential shortcomings with your current pipeline
 
 The current pipeline fails on the "challenge video" which features the following tricky image properties during which this lane line detection algorithm does not work:
 
@@ -51,7 +51,7 @@ The current pipeline fails on the "challenge video" which features the following
 
 Also, this lane-line algorithm will only identify simple lane lines, but not merging or crossing lane lines for more complex traffic patterns. Similarly, the lane-line algorithm will fail if we cross a lane line during a lane switching or overtaking maneuver.
 
-###3. Suggest possible improvements to your pipeline
+#### 3. Suggest possible improvements to your pipeline
 
 Above listed shortcomings could be improved by the following changes to the algorithm:
 

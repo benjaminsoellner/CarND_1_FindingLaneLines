@@ -586,7 +586,7 @@ pre.editor-colors .fold-marker:after,
 </ul>
 <hr>
 <h3>Reflection</h3>
-<h3>1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.</h3>
+<h4>1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.</h4>
 <p>My pipeline consists of the following steps:</p>
 <ul>
 <li><code>grayscale(...)</code>: Grayscaling the image in order to find gradients better</li>
@@ -613,7 +613,7 @@ pre.editor-colors .fold-marker:after,
 <li><code>weighted_img(...)</code>: Combines the line segment image and the original image into one image by overlaying using alpha blending.</li>
 </ul>
 <p>The changes to <code>draw_lines(...)</code> are described above in step (2.). While previously a simple iteration was performed through all the line segments returned by the Hough Transformation (with drawing each of them), now, a more sophisticated algorithm is used that just returns 2 line segments finally.</p>
-<h3>2. Identify potential shortcomings with your current pipeline</h3>
+<h4>2. Identify potential shortcomings with your current pipeline</h4>
 <p>The current pipeline fails on the “challenge video” which features the following tricky image properties during which this lane line detection algorithm does not work:</p>
 <ul>
 <li>bright weather conditions yielding to:
@@ -635,7 +635,7 @@ pre.editor-colors .fold-marker:after,
 </li>
 </ul>
 <p>Also, this lane-line algorithm will only identify simple lane lines, but not merging or crossing lane lines for more complex traffic patterns. Similarly, the lane-line algorithm will fail if we cross a lane line during a lane switching or overtaking maneuver.</p>
-<h3>3. Suggest possible improvements to your pipeline</h3>
+<h4>3. Suggest possible improvements to your pipeline</h4>
 <p>Above listed shortcomings could be improved by the following changes to the algorithm:</p>
 <ol>
 <li>while taking the gradient in the image with <code>canny(...)</code> normalizing it by the contrast of the surrounding image</li>
